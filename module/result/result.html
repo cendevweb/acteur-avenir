@@ -1,0 +1,9 @@
+<div class="panel panel-default" ng-repeat="data in result.datas | orderBy: 'data.id'">
+  <div class="panel-heading">
+    <h3 class="panel-title">Question pour {{data.intervenant}}</h3>
+    <div class="text-muted panel-muted"> de {{data.nom}} ({{data.fonction}}) à {{data.date}}</div>
+  </div>
+  <div class="panel-body">
+    <p>{{data.message}}</p>
+  </div>
+</div>

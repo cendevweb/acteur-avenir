@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="AA" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Acteur d'avenir</title>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src ="module/home/home.js"></script>
+	<script type="text/javascript" src ="module/admin/admin.js"></script>
+	<script type="text/javascript" src ="module/result/result.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary access" data-toggle="modal" data-target="#myModal">
+	 Accès privé
+	</button>
+	<!-- Modal -->
+	<div ng-controller="homeCtrl as home"class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Accès privé</h4>
+	      </div>
+	      <div class="modal-body">
+	        <input type="text" id="key" placeholder="Ecrire la clé secrete..." ng-model="home.key">
+		    <button type="button" class="btn btn-primary" ng-click="home.verifyKey()">Vérifier</button>
+		    <div ng-show='home.verif' class=".col-md-3 .col-md-offset-3" style="display: inline-block;">
+		    Lien :
+		    	<a class="btn btn-default" ui-sref="result">Result</a>
+				<a class="btn btn-default" ui-sref="admin">Admin</a>
+		    </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<header>
+		<img src="assets/logo_FORMIRIS.png" alt="logo formiris">
+		<h2>Acteur d’avenir </h2>
+	</header>
+	<br/>
+	<main ui-view></main>
+</body>
+<script text="text/javascript">
+	window.location = "http://www.formiris.org/5avril/#!/";
+</script>
+</html>

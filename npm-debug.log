@@ -1,0 +1,164 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bootstrap
+8 silly fetchNamedPackageData bootstrap
+9 silly mapToRegistry name bootstrap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bootstrap',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bootstrap',
+12 silly mapToRegistry   name: 'bootstrap',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+14 verbose request uri https://registry.npmjs.org/bootstrap
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:31:43
+17 verbose request id 4ff35f8e2d2668ba
+18 verbose etag W/"58c24837-c619"
+19 verbose lastModified Fri, 10 Mar 2017 06:31:19 GMT
+20 http request GET https://registry.npmjs.org/bootstrap
+21 http 304 https://registry.npmjs.org/bootstrap
+22 verbose headers { date: 'Tue, 14 Mar 2017 13:31:24 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"58c24837-c619"',
+22 verbose headers   age: '159',
+22 verbose headers   connection: 'close',
+22 verbose headers   'x-served-by': 'cache-cdg8726-CDG',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1489498284.950647,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Tue, 14 Mar 2017 13:31:24 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"58c24837-c619"',
+23 silly get     age: '159',
+23 silly get     connection: 'close',
+23 silly get     'x-served-by': 'cache-cdg8726-CDG',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1489498284.950647,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose etag https://registry.npmjs.org/bootstrap from cache
+25 verbose get saving bootstrap to C:\Users\dtuna\AppData\Roaming\npm-cache\registry.npmjs.org\bootstrap\.cache.json
+26 verbose correctMkdir C:\Users\dtuna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule bootstrap@3.3.7 checking installable status
+40 silly cache add args [ 'bootstrap', null ]
+41 verbose cache add spec bootstrap
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'bootstrap',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'bootstrap',
+42 silly cache add   name: 'bootstrap',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed bootstrap@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for bootstrap
+45 info addNameTag [ 'bootstrap', 'latest' ]
+46 silly mapToRegistry name bootstrap
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'bootstrap',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'bootstrap',
+49 silly mapToRegistry   name: 'bootstrap',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+51 verbose addNameTag registry:https://registry.npmjs.org/bootstrap not in flight; fetching
+52 verbose get https://registry.npmjs.org/bootstrap not expired, no request
+53 silly addNameTag next cb for bootstrap with tag latest
+54 silly addNamed bootstrap@3.3.7
+55 verbose addNamed "3.3.7" is a plain semver version for bootstrap
+56 silly cache afterAdd bootstrap@3.3.7
+57 verbose afterAdd C:\Users\dtuna\AppData\Roaming\npm-cache\bootstrap\3.3.7\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\dtuna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\dtuna\AppData\Roaming\npm-cache\bootstrap\3.3.7\package\package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree acteur-avenir
+62 silly currentTree +-- angular-route@1.6.3
+62 silly currentTree +-- angular-ui-router@0.4.2
+62 silly currentTree +-- angular@1.6.3
+62 silly currentTree +-- bootstrap@4.0.0-alpha.6
+62 silly currentTree +-- grunt-connect-rewrite@0.2.1
+62 silly currentTree +-- jquery@3.1.1
+62 silly currentTree `-- tether@1.4.0
+63 silly idealTree acteur-avenir
+63 silly idealTree +-- angular-route@1.6.3
+63 silly idealTree +-- angular-ui-router@0.4.2
+63 silly idealTree +-- angular@1.6.3
+63 silly idealTree +-- bootstrap@3.3.7
+63 silly idealTree `-- grunt-connect-rewrite@0.2.1
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 warn checkPermissions Missing write access to C:\Users\dtuna\Desktop\acteur-avenir\node_modules\bootstrap
+67 silly rollbackFailedOptional Starting
+68 silly rollbackFailedOptional Finishing
+69 silly runTopLevelLifecycles Finishing
+70 silly install printInstalled
+71 warn enoent ENOENT: no such file or directory, open 'C:\Users\dtuna\Desktop\acteur-avenir\package.json'
+72 verbose enoent ENOENT: no such file or directory, open 'C:\Users\dtuna\Desktop\acteur-avenir\package.json'
+72 verbose enoent This is most likely not a problem with npm itself
+72 verbose enoent and is related to npm not being able to find a file.
+73 warn grunt-connect-rewrite@0.2.1 requires a peer of grunt@~0.4.1 but none was installed.
+74 verbose If you need help, you may report this error at:
+74 verbose     <https://github.com/npm/npm/issues>
+75 warn acteur-avenir No description
+76 verbose If you need help, you may report this error at:
+76 verbose     <https://github.com/npm/npm/issues>
+77 warn acteur-avenir No repository field.
+78 verbose If you need help, you may report this error at:
+78 verbose     <https://github.com/npm/npm/issues>
+79 warn acteur-avenir No README data
+80 verbose If you need help, you may report this error at:
+80 verbose     <https://github.com/npm/npm/issues>
+81 warn acteur-avenir No license field.
+82 verbose If you need help, you may report this error at:
+82 verbose     <https://github.com/npm/npm/issues>
+83 verbose stack Error: ENOENT: no such file or directory, access 'C:\Users\dtuna\Desktop\acteur-avenir\node_modules\bootstrap'
+83 verbose stack     at Error (native)
+84 verbose cwd C:\Users\dtuna\Desktop\acteur-avenir
+85 error Windows_NT 6.1.7601
+86 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bootstrap" "--save"
+87 error node v6.10.0
+88 error npm  v3.10.10
+89 error path C:\Users\dtuna\Desktop\acteur-avenir\node_modules\bootstrap
+90 error code ENOENT
+91 error errno -4058
+92 error syscall access
+93 error enoent ENOENT: no such file or directory, access 'C:\Users\dtuna\Desktop\acteur-avenir\node_modules\bootstrap'
+94 error enoent ENOENT: no such file or directory, access 'C:\Users\dtuna\Desktop\acteur-avenir\node_modules\bootstrap'
+94 error enoent This is most likely not a problem with npm itself
+94 error enoent and is related to npm not being able to find a file.
+95 verbose exit [ -4058, true ]

@@ -1,0 +1,85 @@
+header{
+	text-align: center;
+	width: 100%:;
+}
+header img{
+	display: inline-block;
+	max-width: 15%;
+	margin-right: 2vw;
+	
+}
+header h2{
+	display: inline-block;
+	color: #682080;
+	position: relative;
+	font-size: 2.7vw;
+	top:1.2vw;
+}
+
+.panel{
+	width: 70%;
+	margin-left: 15%;
+}
+
+.panel-title{
+	width: auto;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.panel-muted{
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 16px;
+}
+.panel-body{
+	font-size: 20px;
+}
+
+.admin{
+	width: 85%;
+	margin-left: 7.5%;
+}
+.id{
+	width: 6%
+}
+.nom{
+	width: 20%;
+}
+.intervenant{
+	width: 14%;
+}
+.adminInput{
+	width: 100% !important;
+}
+
+.access{
+	position: absolute;
+	top:3vh;
+	left: 3vw
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.hometxt{
+		font-size: 2em;
+	}
+	.homeform label{
+		font-size: 2.5em;
+	}
+	.form-control{
+		font-size: 2em;
+		height: 80px;
+	}
+	.btn{
+		font-size: 2em;
+	}
+	header img{
+		max-width: 30%;
+	}
+	header h2{
+		font-size: 2em;
+	}
+	.access{
+		display: none;
+	}
+}

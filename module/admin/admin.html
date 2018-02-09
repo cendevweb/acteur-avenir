@@ -1,0 +1,38 @@
+	<div ng-show="admin.msgs.length > 0" class="alert alert-success admin">
+	  {{admin.msgs}}
+	</div>
+	<div ng-show="admin.errors.length >0" class="alert alert-danger admin">
+	 {{admin.errors}}
+	</div>
+ <form class="form-inline admin" ng-repeat="data in admin.datas | orderBy: 'data.id' track by $index " novalidate ng-submit="admin.modify($index)">
+ 	<div class="form-group id">
+ 		<div class="col-1">
+ 			<input class="form-control adminInput" type="text" ng-value="data.id" ng-model="admin.datas[$index].id" id="id" readonly>
+ 		</div>
+ 	</div>
+ 	<div class="form-group nom">
+ 		<div class="col-3">
+ 			<input class="form-control adminInput" type="text" ng-value="data.nom" ng-model="admin.datas[$index].nom" id="nom">
+ 		</div>
+ 	</div>
+ 	<div class="form-group intervenant">
+ 		<select class="form-control adminInput" id="intervenant" ng-value="data.intervenant" ng-model="admin.datas[$index].intervenant">
+ 			<option value="" disabled selected>Choisissez un intervenant</option>
+ 			<option value="Avocat">Avocat</option>
+ 			<option value="Psychologue">Psychologue</option>
+ 		</select>
+ 	</div>
+ 	<div class="form-group">
+ 		<div class="col-5">
+ 			<input class="form-control" type="text" id="fonction" ng-value="data.fonction" ng-model="admin.datas[$index].fonction">
+ 		</div>
+ 	</div>
+ 	<div class="form-group">
+ 		<textarea class="form-control" id="message" rows="1" ng-value="data.message" ng-model="admin.datas[$index].message"></textarea>
+ 	</div>
+ 	<button type="button" class="btn btn-primary" confirmed-click="admin.modify($index)" 
+    ng-confirm-click="Etes vous sur de vouloir modifier cette question ?">Enregister</button>
+ 	<button type="button" class="btn btn-danger"  confirmed-click="admin.delete($index)" 
+    ng-confirm-click="Etes vous sur de vouloir supprimer cette question ?">Supprimer</button>
+ 	<br/>
+ </form>
